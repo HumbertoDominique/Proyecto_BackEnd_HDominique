@@ -22,11 +22,11 @@ class ProductManager {
     const valoresProductos = Object.values(producto);
 
     if (valoresProductos.includes(undefined)) {
-      console.log("");
+      ("/n");
       console.log("Todos los campos son obligatorios para agregar productos.");
-      console.log("");
+      ("/n");
     } else if (codigoDuplicado != -1) {
-      console.log("");
+      ("/n");
       console.log("Se ha detectado que el siguiente código está duplicado:");
       console.log(producto.code);
     } else {
@@ -50,10 +50,10 @@ class ProductManager {
     );
 
     if (productsIndex === -1) {
-      console.log("");
+      ("/n");
       console.log("El producto que está tratando de buscar no existe.");
     } else {
-      console.log("");
+      ("/n");
       console.log("El producto que está buscando por id es:");
       console.log(this.products[productsIndex]);
     }
@@ -65,7 +65,7 @@ class ProductManager {
 const productManager = new ProductManager();
 
 //  SE LEE EN ARREGLO INICIAL DE PRODUCTOS - ARREGLO VACÍO
-console.log("");
+("/n");
 console.log("ARREGLO INICIAL DE PRODUCTOS", productManager.getProducts());
 
 // SE CREA PRIMER PRODUCTO PARA AGREGAR AL ARREGLO.
